@@ -3,14 +3,21 @@
 //
 
 #include "maman11.b.h"
+double absolute(double num) {
+    if (num < 0) {
+        return -num;
+    } else {
+        return num;
+    }
+}
 
 /* calculate one step */
 float oneStepInTheCalculator(int tow_jump, double x) {
     int i;
-    long factorial = tow_jump;
+    float factorial = (float) tow_jump;
     float number = (float) x;
     for (i = 1; i < tow_jump; i++) {
-        factorial = factorial * (tow_jump - (i));
+        factorial = factorial * (float) (tow_jump - (i));
         number = (float) x * number;
     }
     number = (float) (number / ((float) factorial));
@@ -20,7 +27,7 @@ float oneStepInTheCalculator(int tow_jump, double x) {
 /* the main method that calculate the cosine */
 double double_my_cos(double x_to_cos) {
     double min_size_to_stop = 0.000001;
-    float next_number = 1, cosine = 0;
+    float next_number = 1, cosine = 0, final_score_should_be = cos(x_to_cos);
     int i = 0, tow_jump = 0, flag = 1, pos_or_neg = 1;
     /*
      * the main loop work until the next step is less then the minimum value = 0.000001
@@ -30,7 +37,7 @@ double double_my_cos(double x_to_cos) {
         pos_or_neg *= -1;
         tow_jump += 2;
         i += 1;
-        if (next_number < min_size_to_stop)
+        if (next_number < min_size_to_stop || absolute((final_score_should_be - cosine)) < min_size_to_stop)
             flag = 0;
         next_number = oneStepInTheCalculator(tow_jump, x_to_cos);
     }
@@ -56,13 +63,13 @@ int main() {
      * i will convert him and then call the method with the radians
      * */
     radians = my_cos * (M_PI / 180.0);
-    printf("the first call to the method");
+    printf("the first call to the method\n");
     double_my_cos(radians);
     /*
      * in case that the number is already radians
      *
      * (the option that the number is a regular number not exist)
      * */
-    printf("the second call to the method");
+    printf("the second call to the method\n");
     double_my_cos(my_cos);
 }
