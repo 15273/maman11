@@ -1,0 +1,12 @@
+# maman 12 q3 2022a
+#in the settings "initialize program counter to global main"
+.data
+msg1: .asciiz "\nPlease enter an integer -9999 to +9999:\n"
+wrong_input:    .asciiz "\n wrong input Please Enter again:\n"
+.text
+.globl main
+wrong:
+    li $v0, 4
+        la $a0, wrong_input
+        sycal
+
