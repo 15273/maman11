@@ -1,14 +1,19 @@
 #include <stdio.h>
 #include <math.h>
 
+/**
+ * return the absolute value of x*/
 double pos(double x) {
     if (x < 0)
         return -x;
     return x;
 }
 
+/**
+ *  Reduce angle to the range [-pi, pi]
+ *  */
 double reduce_angle(double angle) {
-    // Reduce angle to the range [-pi, pi]
+
     while (angle > 3.141592653589793) {
         angle -= 2 * 3.141592653589793;
     }
@@ -27,16 +32,16 @@ int fact(int n) {
 }
 
 double double_my_cos(double x) {
-    x = reduce_angle(x);  // Reduce the angle within the range [-pi, pi]
-    double result = 1.0;  // Initialize result with the first term in the series
+    x = reduce_angle(x);  /* Reduce the angle within the range [-pi, pi] */
+    double result = 1.0;  /* Initialize result with the first term in the series */
     double power = 1.0, next = 1.0;
     int sign = -1;
     int n = 2;
     while (pos(next) > 0.000001) {
-        power *= x * x;  // Update the power term
+        power *= x * x;  /* Update the power term */
         next = (sign * power / (double) fact(n));
-        result += next;  // Calculate the next term in the series
-        sign *= -1;  // Alternate the sign
+        result += next;  /* Calculate the next term in the series */
+        sign *= -1;  /* Alternate the sign */
         n += 2;
     }
     return result;
