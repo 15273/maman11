@@ -46,6 +46,10 @@ double double_my_cos(double x) {
 int main() {
     double angle;
     printf("Please enter an angle (in radians) to calculate its cosine: ");
+    /**
+     * the number can't be grater then 2π because that we
+     * get the number in radians
+     * */
     scanf("%lf", &angle);
     printf("the built in function of c return : %f\n", cos(angle));
     double cosine = double_my_cos(angle);
