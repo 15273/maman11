@@ -7,9 +7,10 @@
 /* calculate one step */
 float oneStepInTheCalculator(int tow_jump, double x) {
     int i;
-    float factorial = tow_jump, number = (float) x;
+    long factorial = tow_jump;
+    float number = (float) x;
     for (i = 1; i < tow_jump; i++) {
-        factorial = factorial * (float) (tow_jump - (i));
+        factorial = factorial * (tow_jump - (i));
         number = (float) x * number;
     }
     number = (float) (number / ((float) factorial));

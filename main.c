@@ -3,22 +3,18 @@
 #include <string.h>
 
 int main() {
-
-    float *numbers = NULL; /* Pointer to store the numbers */
-    /* Pointer to store the numbers */
-
-//    float numbers2[1000];
     int count = 0;
     int i = 0;
     double dolar;
-    char *token;
-    char input[1024];
+    char *token, input[1024];
 
     printf("Enter numbers separated by spaces, tabs, or newlines:\n");
+
     fgets(input, sizeof(input), stdin); /* Read input from user */
+
     printf("the values that you enter is: %s\n", input);
     token = strtok(input, " \t\n"); /* Tokenize using space, tab, and newline as delimiters */
-    printf("Index\tValue\tShekels\n");
+    printf("Index\t Value\t Shekels \n");
     dolar = atof(token);
     while (token != NULL) {
         /* Allocate memory for the numbers array dynamically */
