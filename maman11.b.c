@@ -63,3 +63,9 @@ int main() {
     printf("Cosine of %.2f radians in are method is: %.6f\n", angle, cosine);
     return 0;
 }
+
+/*
+ * you need to check this flags in the terminal:
+ * gcc -g -o maman11.b maman11.b.c -std=c90 -ansi -pedantic -Wall
+ * take this and paste this in the terminal on your code
+*/

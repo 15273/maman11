@@ -1,12 +1,12 @@
 CC = gcc
-CFLAGS = -std=c90 -Wall -ansi -pedantic -Wextra
+CFLAGS = -g -std=c90 -ansi -pedantic -Wall
 
 .PHONY: all clean
 
-all: myprogram maman11.b
+all: main
 
-myprogram: main.c maman11.b.c
-	$(CC) $(CFLAGS) -o  main.c maman11.b.c
+main: main.c
+	$(CC) $(CFLAGS) -o main main.c
 
 clean:
-	rm -f main maman11.b
+	rm -f main
