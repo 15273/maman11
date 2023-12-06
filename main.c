@@ -3,14 +3,22 @@
 #include <string.h>
 
 int main() {
+<<<<<<< HEAD
     float *numbers = NULL; /* Pointer to store the numbers */
+=======
+    float *numbers = NULL;
+    /* Pointer to store the numbers */
+>>>>>>> a190cf4 (Initial commit)
 //    float numbers2[1000];
     int count = 0;
     int i = 0;
     double dolar;
     char *token;
     char input[1024];
+<<<<<<< HEAD
 
+=======
+>>>>>>> a190cf4 (Initial commit)
     printf("Enter numbers separated by spaces, tabs, or newlines:\n");
     fgets(input, sizeof(input), stdin); /* Read input from user */
     printf("the values that you enter is: %s\n", input);
@@ -26,4 +34,7 @@ int main() {
     }
     return 0;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> a190cf4 (Initial commit)

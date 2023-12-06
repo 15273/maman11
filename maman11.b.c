@@ -5,6 +5,7 @@
 #include "maman11.b.h"
 #include <limits.h>
 
+
 /* check if the current step should be negative or positive */
 int posOrNeg(int i) {
     if (i % 2 == 0) {
@@ -59,6 +60,7 @@ int main() {
     double my_cos, radians;
     printf("please enter a number that you want to calculate the cosine for him: ");
     scanf("%lf", &my_cos);
+
 //    radians = my_cos * (M_PI / 180.0);
 //    double_my_cos(radians);
     double_my_cos(my_cos);

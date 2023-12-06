@@ -7,6 +7,11 @@
 
 #include <stdio.h>
 #include <math.h>
+<<<<<<< HEAD
+=======
+#include <limits.h>
+
+>>>>>>> a190cf4 (Initial commit)
 
 
 #endif //UNTITLED2_MAMAN11_B_H
