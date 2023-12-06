@@ -7,11 +7,14 @@
 
 #include <stdio.h>
 #include <math.h>
-<<<<<<< HEAD
-=======
+
+
 #include <limits.h>
 
->>>>>>> a190cf4 (Initial commit)
+
+
+#include <limits.h>
+
 
 #include <limits.h>
 
