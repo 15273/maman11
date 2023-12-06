@@ -59,6 +59,7 @@ int main() {
      * get the number in radians
      * */
     scanf("%lf", &angle);
+    angle = fmod(angle, 2 * 3.141592653589793);
     printf("the built in function of c return : %f\n", cos(angle));
     cosine = double_my_cos(angle);
     printf("Cosine of %.2f radians in are method is: %.6f\n", angle, cosine);
