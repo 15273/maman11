@@ -26,7 +26,7 @@ int fact(int n) {
     return factorial;
 }
 
-double cos_taylor(double x) {
+double double_my_cos(double x) {
     x = reduce_angle(x);  // Reduce the angle within the range [-pi, pi]
     double result = 1.0;  // Initialize result with the first term in the series
     double power = 1.0, next = 1.0;
@@ -47,9 +47,8 @@ int main() {
     double angle;
     printf("Please enter an angle (in radians) to calculate its cosine: ");
     scanf("%lf", &angle);
-    int terms = 10;  // Number of terms in the Taylor series expansion
     printf("the built in function of c return : %f\n", cos(angle));
-    double cosine = cos_taylor(angle);
+    double cosine = double_my_cos(angle);
     printf("Cosine of %.2f radians in are method is: %.6f\n", angle, cosine);
     return 0;
 }
