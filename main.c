@@ -1,11 +1,11 @@
 #include <stdio.h>
 int main() {
     double dollar, number = 0;
-    printf("please enter numbers separated by spaces / tabs:");
+    printf("please enter numbers separated by spaces / tabs:\n");
     scanf("%lf", &dollar);
-    printf("$\t\t\t\tNIS\n");
+    printf("\n\t$\t\t\t\tNIS\t\n");
     while (scanf("%lf", &number) == 1) {
-        printf("%.2lf\t\t\t\t%.2lf\n", number * dollar, number);
+        printf("\t%.2lf\t\t\t\t%.2lf\t\n", number * dollar, number);
     }
     return 0;
 }
