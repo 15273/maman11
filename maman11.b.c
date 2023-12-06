@@ -66,6 +66,7 @@ int main() {
 
 /*
  * you need to check this flags in the terminal:
+ * also i make a (make file) for this file
  * gcc -g -o maman11.b maman11.b.c -std=c90 -ansi -pedantic -Wall
  * take this and paste this in the terminal on your code
 */
