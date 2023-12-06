@@ -10,7 +10,7 @@ add_library(untitled2 library.c
 <<<<<<< HEAD
         lerning.c
         lerning.h
-        maman11.b.c
+        maman11.c
         maman11.b.h
         maman11.dSYM/try.c
         new_work.c)

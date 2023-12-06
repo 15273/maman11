@@ -13,7 +13,7 @@ int main() {
 
 /*
  * you need to check this flags in the terminal:
- * also i make a (make file) for this file
+ * also i make the (make file) for this file
  * gcc -g -o main main.c -std=c90 -ansi -pedantic -Wall
  * take this and paste this in the terminal on your code
 */

@@ -2,7 +2,8 @@
 #include <math.h>
 
 /**
- * return the absolute value of x*/
+ * return the absolute value of x
+ * */
 double pos(double x) {
     if (x < 0)
         return -x;
@@ -66,7 +67,7 @@ int main() {
 
 /*
  * you need to check this flags in the terminal:
- * also i make a (make file) for this file
+ * also i make the (make file) for this file
  * gcc -g -o maman11.b maman11.b.c -std=c90 -ansi -pedantic -Wall
  * take this and paste this in the terminal on your code
 */
